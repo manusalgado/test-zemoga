@@ -1,0 +1,46 @@
+.Home--content {
+    background-color: #ebebeb;
+    height: 100px;
+  
+    .Home--content__box {
+      padding: 0;
+      .Home--content__title {
+        font-size: 25px;
+        font-weight: 300;
+        position: relative;
+        width: 260px;
+        left: 30px;
+        top: 12px;
+        line-height: 35px;
+        span {
+          font-weight: bold;
+          font-size: 35px;
+        } 
+      }
+    }
+  
+    .Home--content__description {
+      font-size: 13px;
+      font-weight: 300;
+      margin-top: 25px;
+      padding-right: 30px;
+    }
+  }
+                        
+  .Votes {
+    margin-top: 35px;
+    .Votes__title {
+      font-size: 35px;
+      font-weight: 300;
+    }
+  }
+  .Home {
+    .Home__grid {
+      margin-bottom: 50px; 
+    }
+  }
+  .__submit {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 300;
+  }
