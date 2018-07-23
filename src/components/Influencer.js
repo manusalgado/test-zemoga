@@ -9,18 +9,18 @@ const Influencer = ({ bigImage }) => (
       <img src={west} alt="vote" className="Influencer--image-content__image"/>
     </div>
     <div className="Influencer__detail">
-      <h3>Kanye West</h3>
-      <p><span>1 mounth ago</span> in Entertainment</p>
-      <p>Vestibulum diam ante, porttitor a odio eget, eget, rhoncus neque. Aenean eu velit libero</p>
-    <div className="Influencer__detail__img">
-      <img src={handUp} alt="Up"/>
-    </div>
-    <div className="Influencer__detail__img">
-      <img src={handDown} alt="Down"/>
-    </div>
+      <h3 className="Influencer__name">Kanye West</h3>
+      <p className="Influencer__time"><strong>1 mounth ago</strong> in Entertainment</p>
+      <p className="Influencer__description">Vestibulum diam ante, porttitor a odio eget, eget, rhoncus neque. Aenean eu velit libero</p>
+      <div className="Influencer__vote Influencer__vote--up">
+        <a href="#"><img src={handUp} alt="Up" className="Influencer__vote__image" /></a>
+      </div>
+      <div className="Influencer__vote Influencer__vote--down">
+        <a href="#"><img src={handDown} alt="Down" className="Influencer__vote__image" /></a>
+      </div>
       <a href="#" className="Influencer__link">Vote now</a>
       <div className="Influencer__detail__vote-img">
-        <img src={handUp} alt="Up"/>
+        <img src={handUp} alt="Up" className="Influencer__detail__vote-icon"/>
       </div>
     </div>
   </div>
