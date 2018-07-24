@@ -24,7 +24,7 @@ const Home = () => (
     </div>
     <div className="row">
       <div className="col-md-12">
-        <p className="__submit">
+        <p className="Home__submit">
           Is there anyone else you would want us to add?
         </p>
         <a href="#" className="Influencer__submit-link">Submit a Name</a>

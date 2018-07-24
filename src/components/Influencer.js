@@ -22,6 +22,14 @@ const Influencer = ({ bigImage }) => (
       <div className="Influencer__detail__vote-img">
         <img src={handUp} alt="Up" className="Influencer__detail__vote-icon"/>
       </div>
+      <div className="Influencer__detail__percent-content">
+        <div className="Influencer__detail__percent-up">
+          <p className="Influencer__detail__total">50%</p>
+        </div>
+        <div className="Influencer__detail__percent-down">
+          <p className="Influencer__detail__total">50%</p>
+        </div>
+      </div>
     </div>
   </div>
 );
