@@ -5,13 +5,13 @@ const influencers = (state=[], action) => {
     case 'VOTE_UP':
       return state.map((influencer) => {
         return influencer.id === action.id 
-          ? { ...infliencer, votes_up: infliencer.votes_up + 1 } 
+          ? { ...influencer, votes_up: influencer.votes_up + 1 } 
           : influencer;
       });
     case 'VOTE_DOWN':
       return state.map((influencer) => {
         return influencer.id === action.id 
-          ? { ...infliencer, votes_down: infliencer.votes_down + 1 } 
+          ? { ...influencer, votes_down: influencer.votes_down + 1 } 
           : influencer;
       });
     default:
