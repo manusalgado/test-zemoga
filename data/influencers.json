@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "votes_up": 25,
+        "votes_down": 75,
+        "name": "Kamye West",
+        "time": "1 month ago",
+        "category": "Entertainment",
+        "description": "Loremp ipsup....",
+        "img": "kanye-west.jpg"
+    },
+    {
+        "id": 2,
+        "votes_up": 64,
+        "votes_down": 36,
+        "name": "Mark",
+        "time": "1 month ago",
+        "category": "Entertainment",
+        "description": "Loremp ipsup....",
+        "img": "mark.jpg"
+    },
+    {
+        "id": 3,
+        "votes_up": 80,
+        "votes_down": 20,
+        "name": "Cristina",
+        "time": "1 month ago",
+        "category": "Entertainment",
+        "description": "Loremp ipsup....",
+        "img": "cristina.jpg"
+    },
+    {
+        "id": 4,
+        "votes_up": 55,
+        "votes_down": 45,
+        "name": "Malala",
+        "time": "1 month ago",
+        "category": "Entertainment",
+        "description": "Loremp ipsup....",
+        "img": "malala.jpg"
+    }
+]
