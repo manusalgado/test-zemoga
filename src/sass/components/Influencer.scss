@@ -15,7 +15,7 @@
     }
     .Influencer--image-content-4 {
       overflow: hidden;
-      height: 550px;
+      height: 580px;
       width: 500px;
       margin-left: auto;
       margin-right: auto;
@@ -32,7 +32,7 @@
       bottom: 0;
       width: 88%;
       right: 34px;
-      padding: 0 50px 50px 50px;
+      padding: 0 50px 100px 50px;
       background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
       transition: 500ms;
       &:hover {
@@ -59,7 +59,7 @@
         transition: 300ms;
         cursor: pointer;
         &:hover {
-          box-shadow: 0px 0px 3px 3px #fff;
+          box-shadow: 0px 0px 2px 2px #fff;
         }
         .Influencer__vote__image {
           width: 25px;
@@ -72,16 +72,16 @@
       .Influencer__vote--down {
         background-color: #ffad1d;
       }
-  }                        
+    }                        
     .Influencer__link {
       padding: 10px 20px;
       width: 30px;
-      box-shadow: 0px 0px 1px 1px;
+      box-shadow: 0px 0px 0px 1px;
       color: #fff;
       text-decoration: none;
       position: relative;
       top: 5px;
-      transition: 500ms;
+      transition: 300ms;
       &:hover {
         background-color: rgba(255, 255, 255, 0.2);
       }
@@ -103,23 +103,63 @@
       text-decoration: none;
     }
   }
-  .Influencer__detail__vote-img {
-    display: inline-block;
-    height: 35px;
-    width: 35px;
-    background-color: #1cbbb4;
-    text-align: center;
-    margin-right: 15px;
-    transition: 300ms;
-    cursor: pointer;
-    position: absolute;
-    left: 0;
-    top: 15px;
-    &:hover {
-      box-shadow: 0px 0px 3px 3px #fff;
+    .Influencer__detail__vote-img {
+      display: inline-block;
+      height: 35px;
+      width: 35px;
+      background-color: #1cbbb4;
+      text-align: center;
+      margin-right: 15px;
+      transition: 300ms;
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 15px;
+      &:hover {
+        box-shadow: 0px 0px 2px 2px #fff;
+      }
+      .Influencer__detail__vote-icon {
+        width: 25px;
+        margin-top: 5px;
+      }
     }
-    .Influencer__detail__vote-icon {
-      width: 25px;
-      margin-top: 5px;
+    .Influencer__detail__percent-content {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      .Influencer__detail__percent-up {
+        width: 50%;
+        height: 50px;
+        background-color: rgba(29, 141, 135, 0.6);
+        display: inline-block;
+        background-image: url('../assets/icons/hand-up.png');
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position-x: 0px;
+        background-position-x: 5%;
+        background-position-y: 10px;
+        .Influencer__detail__total {
+          margin: 0;
+          padding-left: 50px;
+          font-size: 40px;
+        }
+      }
+      .Influencer__detail__percent-down {
+        width: 50%;
+        height: 50px;
+        background-color: rgba(180, 122, 21, 0.6);
+        display: inline-block;
+        background-image: url('../assets/icons/hand-down.png');
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position-x: 0px;
+        background-position-x: 95%;
+        background-position-y: 10px;
+        .Influencer__detail__total {
+          margin: 0;
+          padding-left: 50px;
+          font-size: 40px;
+        }
+      } 
     }
-  }
