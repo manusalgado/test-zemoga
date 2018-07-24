@@ -10,3 +10,13 @@
     text-align: center;
     padding-top: 20px; 
   }
+
+  %social {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 20px;
+  }

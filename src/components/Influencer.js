@@ -8,25 +8,25 @@ const Influencer = ({ influencer, handleVoteUp, handleVoteDown }) => (
       <img src={influencer.img} alt="vote" className="Influencer--image-content__image"/>
     </div>
     <div className="Influencer__detail">
-      <h3>{influencer.name}</h3>
-      <p><span>{influencer.time}</span> in {influencer.category}</p>
-      <p>{influencer.description}</p>
-    <div className="Influencer__detail__img">
-      <a href="#" onClick={(e) => {
-        e.preventDefault();
-        handleVoteUp(influencer.id);
-      }}>
-        <img src={handUp} alt="Up"/>
+      <h3 className="Influencer__name">{influencer.name}</h3>
+      <p className="Influencer__time"><strong>{influencer.time}</strong> in {influencer.category}</p>
+      <p className="Influencer__description">{influencer.description}</p>
+      <div className="Influencer__vote Influencer__vote--up">
+        <a href="#"  onClick={(e) => {
+          e.preventDefault();
+          handleVoteUp(influencer.id);
+        }}>
+        <img src={handUp} alt="Up" className="Influencer__vote__image" />
+        </a>
+      </div>
+      <div className="Influencer__vote Influencer__vote--down">
+        <a href="#" onClick={(e) => {
+          e.preventDefault();
+          handleVoteDown(influencer.id);
+        }}>
+        <img src={handDown} alt="Down" className="Influencer__vote__image" />
       </a>
-    </div>
-    <div className="Influencer__detail__img">
-      <a href="#" onClick={(e) => {
-        e.preventDefault();
-        handleVoteDown(influencer.id);
-      }}>
-        <img src={handDown} alt="Down"/>
-      </a>
-    </div>
+      </div>
       <a href="#" className="Influencer__link">Vote now</a>
       <div className="Influencer__detail__vote-img">
         <img src={handUp} alt="Up" className="Influencer__detail__vote-icon"/>
